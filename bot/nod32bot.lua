@@ -321,207 +321,72 @@ ch: @Nod32team
 
 ]],
     help_text = [[
-NOD32 Commands list :
- 
-1-banhammer list ^
- 
-!kick [username|id]
-(کیک کردن شخص (حتی با ریپلی)
-
-!ban [ username|id]
-(بن کردن افراد (حتی با ریپلی)
-
-!unban [id]
-(انبن کردن افراد (همراه ایدی)
-
-!kickinactive
-حذف اعضای غیرغعال گروه
-
-!kickme
-خروج از گروه
-
-2-Statistics list ^
-
-!who
-لیست+ایدی همه اعضا
-
-!all
-دریافت اطلاعات کلی گروه
-
-!stats
-امار کلی گروه
-
-!modlist
-لیست مدیران گروه
-
-!banlist
-لیست اعضا بن شده
-
-3-Rate Member ^
-
-!setowner [id]
-(id ایجاد مدیر جدید (همراه 
-
-!promote [username]
-(ایجاد ادمین جدید (همراه ریپلی)
-
-!demote [username]
-(برکنار کردن ادمین (همراه ریپلی)
-
-4-General changes ^
-
-!setname [name]
-ایجاد اسم جدید برای گروه
-
-!setphoto
-ایجاد عکس جدید برای پروفایل گروه
-
-!set rules <text>
-ایجاد قانون جدید برای گروه
-
-!set about <text>
-ایجاد درباره گروه
-
-!setflood [value]
-حساسیت به اسپم در گروه
-
-5-View details ^
-
-!about
-درباره گروه
-
-!rules
-قوانین گروه
-
-!settings
-دیدن تنظیمات فعلی گروه
-
-!help
-لیست دستورات ربات
-
-6-Security Group ^
-
-!lock member 
-قفل ورود اعضا جدید
-
-!lock join
-قفل ورود اعضا جدید توسط لینک
-
-!lock name
-قفل اسم گروه
-
-!lock chat
-قفل چت ممنوع
-
-!lock ads
-قفل تبلیغات
-
-!lock leave
-قفل خروج=بن گروه
-
-!lock fosh
-ممنوع کردن فحش
-
-!lock chat
-قفل چت ممنوع گروه
-
-!antibot enable 
-ورود ربات ها ممنوع
-
-!antibot disable
-ورود ربات ها ازاد
-
-!unlock xxxx
-[*name*leave*member]
-[*fosh*ads]
-[chat*join*photo]
-باز کردن دستورات قفل شده
-
-7-sticker Mode ^
-
-!sticker warn
-اخطار به فرد استیکر ارسال کننده
-
-!sticker kick
-قفل استفاده از استیکر
-
-!sticker ok
-استفاده از استیکر ازاد
-
-8-Fun time ^
-
-!time country city
-ساعت کشور مورد نظر
-
-!loc country city
-مشخصات کشور و شهر مورد نظر
-
-!google
-سرچ مطلب مورد نظر از گوگل
- 
- !gps
- مکان کشور , شهر مورد نظر تحت گوگل
- 
- !calc 3+1
- انجام محاسبات ریاضی
-
-9-Service Provider ^
-
-!newlink
-ایجاد لینک جدید
-
-!link
-نمایش لینک گروه
-
-!linkpv
-فرستادن لینک گروه تو پیوی
-(حتما شماره ربات را سیو کنید)
-
-!invite username
-اضافه کردن شخص تو گروه
-(حتما شماره ربات را سیو کرده باشد)
-
-10-Member Profile and Group ^
+ !kick [username|id]☑
+You can also do it by reply
+!ban [ username|id]🌋
+You can also do it by reply
+!unban [id]🌊
+You can also do it by reply
+!who🌂
+Members list
+!modlist🚀
+Moderators list
+!promote [username]🚩
+Promote someone
+!demote [username]🚬
+Demote someone
+!kickme🚫
+Will kick user
+!about🔰
+Group description
+!setphoto⛔
+Set and locks group photo
+!setname [name]🚧
+Set group name
+!rules🍕
+Group rules
+!id👸
+return group id or user id
+!help🎅
+!lock [member|name|bots|leave]	🙈
+Locks [member|name|bots|leaveing] 
+!unlock [member|name|bots|leave]✌
+Unlocks [member|name|bots|leaving]
+!set rules <text>❤
+Set <text> as rules
+!set about <text>👐
+Set <text> as about
+!settings😵
+Returns group settings
+!newlink👀
+create/revoke your group link
+!link😷
+returns group link
 !owner
-مدیر گروه
+returns group owner id
+!setowner [id]😇
+Will set id as owner
+!setflood [value]😊
+Set [value] as flood sensitivity
+!stats😖
+Simple message statistics
+!save [value] <text>😉
+Save <text> as [value]
+!get [value]😄
+Returns text of [value]
+!clean [modlist|rules|about]😓
+Will clear [modlist|rules|about] and set it to nil
+!res [username]😝
+returns user id
+!log😈
+will return group logs
+!banlist⏳
+will return group ban list
+**U can use both "/" and "!" 
+*Only owner and mods can add bots in group🔴
+*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
+*Only owner can use res,setowner,promote,demote and log commands🔴
 
-!id
-ایدی شخص مورد نظر
-
-!res [username]
-در اوردن ایدی شخص مورد نظر
-
-!info 
-مخشصات فرد مورد نظر
-
-!settings
-تنظیمات فعلی گروه
-
-11-bot number & support ^
-
-!botnumber
-دریافت شماره ربات
-
-!support
-دعوت سازنده ربات به گروه
-(در صورت وجود مشکل)
-
-!version
-ورژن ربات
-
-!feedback (text)
-ارسال نظرات به سازنده
-
-you can use both "/" and "!" 
-.شما میتوانید از ! و / استفاده کنید
-
-Developer: @BehroozYaghi
-توسعه دهنده
-
-channel: @Nod32team
-کانال ما
-
-G00D LUCK ^_^
 ]]
   }
   serialize_to_file(config, './data/config.lua')
